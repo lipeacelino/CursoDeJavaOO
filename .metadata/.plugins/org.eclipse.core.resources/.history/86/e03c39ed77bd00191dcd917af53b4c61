@@ -1,0 +1,15 @@
+package entidades;
+
+public class ProdutoImportado {
+	
+	private double taxa;
+	
+	public ProdutoImportado() {
+		super();
+	}
+	
+	public produtoImportado(String nome, double preco, double taxa) {
+		super();
+		this.taxa = taxa;
+	}
+}

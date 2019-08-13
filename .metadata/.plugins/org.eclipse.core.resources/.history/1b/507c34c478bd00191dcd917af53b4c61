@@ -1,0 +1,67 @@
+package aplicacao;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import entidades.Produto;
+import entidades.ProdutoImportado;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		List<Produto> produtos = new ArrayList<Produto>();
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Digite a quantidade de produtos: ");
+		double qtd = scan.nextDouble();
+		scan.nextLine();
+		
+		for (int i=1; i<=qtd; i++) {
+			
+			System.out.println("Digite os dados do produto #" + i);
+			System.out.println("Comu, usado ou importado? (c/u/i)");
+			String tipoProd = scan.nextLine().toLowerCase();
+			
+			switch (tipoProd) {
+				case "i":
+					System.out.println("Nome: ");
+					String nomeI = scan.nextLine();
+					
+					System.out.println("Preço: ");
+					double precoI = scan.nextDouble();
+					
+					System.out.println("Taxa: ");
+					double taxaI = scan.nextDouble();
+					scan.nextLine();
+					produtos.add(ProdutoImportado());
+					break;
+					
+				case "c":
+					System.out.println("Nome: ");
+					String nomeC = scan.nextLine();
+					
+					System.out.println("Preço: ");
+					double precoC = scan.nextDouble();
+					break;
+					
+				case "u":
+					System.out.println("Nome: ");
+					String nomeU = scan.nextLine();
+					
+					System.out.println("Preço: ");
+					double precoU = scan.nextDouble();
+					
+					System.out.println("Data de fabricação (DD/MM/AAAA): ");
+					
+					break;
+			
+			}
+			
+		}
+		
+		scan.close();
+
+	}
+
+}

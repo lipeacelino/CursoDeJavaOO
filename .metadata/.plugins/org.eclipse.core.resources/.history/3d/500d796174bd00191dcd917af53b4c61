@@ -1,0 +1,12 @@
+package entidades;
+
+import java.util.Date;
+
+public class ProdutoUsado {
+	
+	private Date dataDeFabricacao;
+	
+	public 
+	
+
+}

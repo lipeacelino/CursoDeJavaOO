@@ -1,0 +1,15 @@
+package entidades;
+
+import java.util.Date;
+
+public class ProdutoUsado extends Produto{
+	
+	private Date dataDeFabricacao;
+	
+	@Override
+	public String eiquetaDePreco() {
+		
+	}
+	
+
+}
