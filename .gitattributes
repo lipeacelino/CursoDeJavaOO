@@ -8,7 +8,7 @@
 *.df            text
 *.htm           text diff=html
 *.html          text diff=html
-*.js            text
+*.js            java
 *.jsp           text
 *.jspf          text
 *.jspx          text
